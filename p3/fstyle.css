@@ -1,0 +1,97 @@
+*{
+    margin:0px;
+}
+body{
+    background-image:url(pic/main.webp);
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+header img{
+    width:4%;
+    margin: 20px 0px 0px 10%;
+    border-radius: 50%;
+}
+nav{
+    display:inline-block;
+    position:absolute;
+    right: 10%;
+    top:25px;
+}
+ul{
+    display:inline-block;
+}
+nav ul li{
+    list-style: none;
+    display:inline-block;
+    padding:10px;
+    margin:0px 20px;
+}
+a{
+    color:white;
+    text-decoration:none;
+}
+.divmain1{
+    color:white;
+    width:30%;
+    margin: 180px 0px 0px 10%;
+    text-align:left;
+}
+.divmain1 span{
+    font-size: 70px;
+    font-weight:15px;
+    letter-spacing: 4px;
+}
+.divmain1 p{
+    word-spacing: 2px;
+    letter-spacing: 2px;
+}
+.divmain1 button{
+    margin:20px 0px 0px 0px;
+    padding:10px 15px 10px 15px;
+    width: 40%;
+    border:0px;
+    border-radius: 18px;
+
+}
+.divmain1 button:hover{
+    cursor: pointer;
+}
+.divmain2{
+    color:white;
+    display:inline-block;
+    width:30%;
+    position:absolute;
+    top:140px;
+    right:10%;
+}
+.divmain2 div{
+    display:inline-block;
+    background-repeat: no-repeat;
+    width:200px;
+    height: 250px;
+    background-size: cover;
+    border-radius: 10px;
+    margin:8px;
+    transition: transform 0.5s;
+}
+.divmain2 div h5{
+    padding:15px 25px;
+}
+.divmain2 div p{
+    padding:0px 25px;
+}
+.div1{
+    background-image:url(pic/pic3.jpg);
+}
+.div2{
+    background-image:url(pic/pic2.webp);
+}
+.div3{
+    background-image:url(pic/pic1.jpg);
+}
+.div4{
+    background-image:url(pic/pic4.jpg);
+}
+.divmain2 div:hover{
+    transform: translateY(-10px);
+}
