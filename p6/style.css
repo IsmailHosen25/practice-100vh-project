@@ -1,0 +1,167 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+html{
+    font-size: 10px;
+}
+.container{
+background-color: #37517E;
+height: 100vh;
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 10% 90%;
+padding: 2rem 8rem;
+width: 100%;
+letter-spacing: 1px;
+}
+.container nav{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: repeat(6 ,1fr);
+    grid-template-rows: 100%;
+    color: #fff;
+    align-items: center;
+}
+.container nav .logo{
+    grid-column: 1/1 span;
+    grid-row: 1/-1 ;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.container nav ul{
+    grid-column: 4/-1;
+    grid-row:1/-1 ;
+}
+.container nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.container nav ul li a{
+   font-size: 1.7rem;
+   font-weight: 300;
+   text-decoration: none;
+   color: #fff;
+   text-transform: capitalize;
+}
+.container nav ul li .active{
+    color: #47B2E4;
+}
+.container nav ul li a:hover{
+   color:#47B2E4;
+}
+.container nav ul button{
+    color:#fff;
+    padding: 0.9rem 1.8rem;
+    background-color: transparent;
+    border: 2px solid #47B2E4;
+    border-radius: 25px;
+    transition: background-color 0.3s linear;
+    cursor: pointer;
+}
+.container nav ul button:hover{
+    background-color: #47B2E4;
+}
+.container .body{
+    width: 100%;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+}
+.container .body .content{
+    color: #fff;
+    width:45%;
+    font-size: 2.3rem;
+
+}
+.container .body .content h1{
+    font-weight: bolder;
+}
+.container .body .content p{
+   opacity: 0.7;
+   margin-top: 1.5rem;
+   margin-bottom: 3rem;
+}
+.container .body .btn{
+    display: flex;
+    gap:1rem;
+    align-items: center;
+}
+.container .body .content button{
+    color: #fff;
+}
+.container .body .content .active{
+    font-size: 1.7rem;
+    color:#fff;
+    padding: 1.2rem 2rem;
+    background-color: #47B2E4;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.container .body .content .active:hover{
+    background-color: #278cbb;
+}
+.container .body .content .trans{
+    font-size: 1.7rem;
+    color:#fff;
+    padding: 1.2rem 2rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .body .content .trans span{
+    width: 3.4rem;
+    height: 3.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+    transition: all 0.3s linear;
+}
+.container .body .content .trans span i{
+    font-size: 1.5rem;
+}
+.container .body .content .trans:hover span{
+    border: 3px solid #47B2E4;
+    color: #47B2E4;
+}
+.container .body .image{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+.container .body .image img{
+    width: 100%;
+    height: 80%;
+    position: absolute;
+   animation-name: imganim;
+   animation-duration: 3s;
+   animation-direction:alternate-reverse;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   
+
+}
+@keyframes imganim {
+0%{
+    top:10px;
+}
+50%{
+    top:55px
+}
+100%{
+    top:110px;
+}
+}
