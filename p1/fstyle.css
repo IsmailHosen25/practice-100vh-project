@@ -1,0 +1,84 @@
+*{
+    margin: 0%;
+    padding:0%;
+}
+body{
+    background-image:url(pic/gym2.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    color:white;
+}
+div#d1{
+       display:inline-block;
+       position:absolute;
+       left:90px;
+       top:30px;
+
+}
+div#d1 p{
+   text-align:center;
+   font-size: 1.5rem;
+}
+div#d2{
+    display:block;
+    width:40%;
+    margin: 30px auto;
+}
+div#d3{
+    display:inline-block;
+    position:absolute;
+    right:90px;
+    top:30px;
+}
+button{
+    margin:0px 6px;
+    padding:4px;
+    background-color:black;
+    color:white;
+    border:2px solid white;
+    border-radius:8px;
+    text-align: center;
+}
+ul{
+    display:inline-block;
+}
+li{
+    display:inline-block;
+    margin:0px 30px;
+    font-size:20px;
+    list-style:none;
+}
+a{
+    text-decoration:none;
+    color:white;
+}
+a:hover{
+   color:rgb(173, 173, 148);
+   text-decoration:underline;
+}
+button:hover{
+    background-color:gray;
+    color:rgb(255, 255, 255);
+}
+div#main h2{
+    text-align:center;
+    margin:3px 0px;
+}
+div#main{
+    border:2px solid white;
+    border-radius: 5px;
+    width: 580px;
+    margin: 154px 127px;
+}
+div#main button{
+    margin:10px 10%;
+    border-radius: 10px;
+    width:80%;
+    height:25px;
+}
+div.abc input{
+    padding:0.5rem;
+    margin:10px 10%;
+    width:80%;
+    height:20px;
+}
